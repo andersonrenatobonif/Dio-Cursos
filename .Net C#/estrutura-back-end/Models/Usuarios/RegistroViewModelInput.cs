@@ -8,6 +8,7 @@ namespace estrutura_back_end.Models.Usuarios
 {
     public class RegistroViewModelInput
     {
+      
         [Required(ErrorMessage = "O Login é Obrigatório")]
         public string Login { get; set; }
 

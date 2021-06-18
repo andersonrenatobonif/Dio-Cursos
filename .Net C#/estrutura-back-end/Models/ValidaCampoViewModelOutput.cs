@@ -8,6 +8,6 @@ namespace estrutura_back_end.Models
     public class ValidaCampoViewModelOutput
     {
         public IEnumerable<string> Erros { get; private set; }
-        public  ValidaCampoViewModelOutput(IEnumerable<string> err)
+        public ValidaCampoViewModelOutput(IEnumerable<string> err);
     }
 }
