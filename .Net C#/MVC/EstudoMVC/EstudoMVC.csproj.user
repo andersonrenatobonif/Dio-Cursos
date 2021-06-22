@@ -11,5 +11,6 @@
     <WebStackScaffolding_DbContextTypeFullName>EstudoMVC.Models.Context</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <WebStackScaffolding_IsViewGenerationSelected>True</WebStackScaffolding_IsViewGenerationSelected>
+    <NameOfLastUsedPublishProfile>C:\Users\Anderson\Desktop\Dio-Cursos\.Net C#\MVC\EstudoMVC\Properties\PublishProfiles\EstudoMVC20210622003703 - Zip Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "resourceId": null,
+      "type": "mssql.onprem",
+      "connectionId": "ConnectionStrings:Server=ANDERSON:SQLEXPRESS;Database=EstudoMVC;Trusted_Connection=True;",
+      "secretStore": "AzureAppSettings"
+    }
+  }
+}
