@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Estrutura-back-end-API</name>
+    </assembly>
+    <members>
+        <member name="M:Estrutura_back_end_API.Controllers.UsuarioController.Logar(Estrutura_back_end_API.Models.Usuarios.LoginViewModelInput)">
+            <summary>
+            Este serviço permite autenticar se um usuário cadastrado é ativo 
+            </summary>
+            <param name="loginViewModelInput">View model do login</param>
+            <returns>Retorna status ok, dados do usuario e o token em </returns>"
+        </member>
+    </members>
+</doc>

@@ -27,3 +27,5 @@ C:\Users\Anderson\Desktop\Dio-Cursos\.Net C#\Estrutura-Back-End\Estrutura-back-e
 C:\Users\Anderson\Desktop\Dio-Cursos\.Net C#\Estrutura-Back-End\Estrutura-back-end-API\obj\Debug\net5.0\ref\Estrutura-back-end-API.dll
 C:\Users\Anderson\Desktop\Dio-Cursos\.Net C#\Estrutura-Back-End\Estrutura-back-end-API\obj\Debug\net5.0\Estrutura-back-end-API.pdb
 C:\Users\Anderson\Desktop\Dio-Cursos\.Net C#\Estrutura-Back-End\Estrutura-back-end-API\obj\Debug\net5.0\Estrutura-back-end-API.genruntimeconfig.cache
+C:\Users\Anderson\Desktop\Dio-Cursos\.Net C#\Estrutura-Back-End\Estrutura-back-end-API\bin\Debug\net5.0\Estrutura-back-end-API.xml
+C:\Users\Anderson\Desktop\Dio-Cursos\.Net C#\Estrutura-Back-End\Estrutura-back-end-API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Annotations.dll
