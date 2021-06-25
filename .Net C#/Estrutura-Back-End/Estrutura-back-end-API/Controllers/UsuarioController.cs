@@ -49,9 +49,9 @@ namespace Estrutura_back_end_API.Controllers
             {
                 Subject = new ClaimsIdentity(new Claim[]
                 {
-                    new Claim(ClaimTypes.NameIdentifier, usuarioViewModelOutput.Codigo.ToString()),
-                    new Claim(ClaimTypes.Name, usuarioViewModelOutput.Login.ToString()),
-                    new Claim(ClaimTypes.Email, usuarioViewModelOutput.Email.ToString())
+                    //new Claim(ClaimTypes.NameIdentifier, usuarioViewModelOutput.Codigo.ToString()),
+                    //new Claim(ClaimTypes.Name, usuarioViewModelOutput.Login.ToString()),
+                    //new Claim(ClaimTypes.Email, usuarioViewModelOutput.Email.ToString())
                 }),
                 Expires = DateTime.UtcNow.AddDays(1),
                 SigningCredentials = new SigningCredentials(symmetricSecurityKey, SecurityAlgorithms.HmacSha256Signature)

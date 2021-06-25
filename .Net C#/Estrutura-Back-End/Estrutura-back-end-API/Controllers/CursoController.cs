@@ -49,9 +49,9 @@ namespace Estrutura_back_end_API.Controllers
             var cursos = new List<CursoViewModelOutput>();
             cursos.Add(new CursoViewModelOutput()
             {
-                Login = codigoUsuario.ToString(),
-                Descricao = "teste",
-                Nome = "teste"
+                //Login = codigoUsuario.ToString(),
+                //Descricao = "teste",
+                //Nome = "teste"
             });
             return Ok(cursos);
         }
