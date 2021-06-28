@@ -11,27 +11,27 @@ namespace DIO.Bank
         {
             string opcaoUsuario = ObterOpcaoUsuario();
 
-            while (opcaoUsuario.ToUpper() != "x")
+            while (opcaoUsuario.ToUpper() != "X")
             {
                 switch (opcaoUsuario)
                 {
                     case "1":
-                        //ListarContas();
+                        ListarContas();
                         break;
 
                     case "2":
                         InserirNovaConta();
                         break;
                     case "3":
-                        //Transferir();
+                        Transferir();
                         break;
 
                     case "4":
-                        //Sacar();
+                        Sacar();
                         break;
 
                     case "5":
-                        //Depositar();
+                        Depositar();
                         break;
 
                     case "C":
@@ -48,6 +48,58 @@ namespace DIO.Bank
 
             Console.WriteLine("Obrigado por utilizar nossos serviços. ");
             Console.ReadLine();
+        }
+
+        private static void Transferir()
+        {
+            Console.WriteLine("Transferindo recursos");
+            Console.WriteLine();
+
+            Console.Write("Digite a conta de origem: ");
+            int indiceContaOrigem = int.Parse(Console.ReadLine());
+
+            Console.Write("Digite a conta de destino: ");
+            int indiceContaDestino = int.Parse(Console.ReadLine());
+
+            Console.Write("Digite o valor da transferência: ");
+            double valorTransferencia = double.Parse(Console.ReadLine());
+
+            listContas[indiceContaOrigem].Transferir(valorTransferencia, listContas[indiceContaDestino]);
+
+        }
+
+        private static void Depositar()
+        {
+            Console.WriteLine("Realizando depósito bancário");
+            Console.WriteLine();
+
+            Console.Write("Digite o número da conta");
+            int indiceConta = int.Parse(Console.ReadLine());
+
+            Console.Write("Digite o valor que deseja depositar");
+            double valorDeposito = double.Parse(Console.ReadLine());
+
+            listContas[indiceConta].Depositar(valorDeposito);
+
+        }
+
+        private static void ListarContas()
+        {
+            Console.WriteLine("Listando Contas");
+            Console.WriteLine();
+
+            if (listContas.Count == 0)
+            {
+                Console.WriteLine("Nenhuma conta cadastrada");
+                return;
+            }
+
+            for (int i = 0; i < listContas.Count; i ++)
+            {
+                Conta conta = listContas[i];
+                Console.Write("#{0} - ", i);
+                Console.WriteLine(conta);
+            }
         }
 
         private static void InserirNovaConta()
@@ -74,6 +126,21 @@ namespace DIO.Bank
 
             listContas.Add(novaConta);
         }
+
+          private static void Sacar()
+        {
+            Console.WriteLine("Sacando dinheiro");
+            Console.WriteLine();
+
+            Console.WriteLine("Digite o número da conta: ");
+            int indiceConta = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o valor a ser sacado: ");
+            double valorSaque = double.Parse(Console.ReadLine());
+
+            listContas[indiceConta].Sacar(valorSaque);
+        }
+
 
         private static string ObterOpcaoUsuario()
         {
