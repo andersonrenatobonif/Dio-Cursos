@@ -1,0 +1,62 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Vaquinha_Online</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="src\Vaquinha.MVC\.vscode\launch.json" />
+    <Content Include="src\Vaquinha.MVC\.vscode\settings.json" />
+    <Content Include="src\Vaquinha.MVC\.vscode\tasks.json" />
+    <Content Include="tests\Vaquinha.Automated.UI.Tests\.vscode\launch.json" />
+    <Content Include="tests\Vaquinha.Automated.UI.Tests\.vscode\tasks.json" />
+    <Content Include="tests\Vaquinha.Integration.Tests\.vscode\launch.json" />
+    <Content Include="tests\Vaquinha.Integration.Tests\.vscode\tasks.json" />
+    <Content Include="tests\Vaquinha.Unit.Tests\.vscode\launch.json" />
+    <Content Include="tests\Vaquinha.Unit.Tests\.vscode\tasks.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="src\Vaquinha.Domain\Vaquinha.Domain.csproj" />
+    <None Include="src\Vaquinha.MVC\Vaquinha.MVC.csproj" />
+    <None Include="src\Vaquinha.Repository\Vaquinha.Repository.csproj" />
+    <None Include="src\Vaquinha.Service\Vaquinha.Service.csproj" />
+    <None Include="tests\Vaquinha.Automated.UI.Tests\Vaquinha.Automated.UI.Tests.csproj" />
+    <None Include="tests\Vaquinha.Integration.Tests\Vaquinha.Integration.Tests.csproj" />
+    <None Include="tests\Vaquinha.Tests.Common\Vaquinha.Tests.Common.csproj" />
+    <None Include="tests\Vaquinha.Unit.Tests\Vaquinha.Unit.Tests.csproj" />
+    <None Include="Vaquinha.sln" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Bogus" Version="33.0.2" />
+    <PackageReference Include="FluentAssertions" Version="5.10.3" />
+    <PackageReference Include="FluentValidation" Version="10.2.3" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="10.2.3" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="10.2.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.DataAnnotations" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="5.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Http.Polly" Version="5.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Options.DataAnnotations" Version="5.0.0" />
+    <PackageReference Include="Moq" Version="4.16.1" />
+    <PackageReference Include="NToastNotify" Version="7.0.0" />
+    <PackageReference Include="OpenQA.Selenium.Winium" Version="1.0.0.4" />
+    <PackageReference Include="xunit.extensibility.core" Version="2.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="src\Vaquinha.Domain\bin\Release\netcoreapp3.1\" />
+    <Folder Include="src\Vaquinha.MVC\bin\Release\netcoreapp3.1\" />
+    <Folder Include="src\Vaquinha.Repository\bin\Release\netcoreapp3.1\" />
+    <Folder Include="src\Vaquinha.Service\bin\Release\netcoreapp3.1\" />
+    <Folder Include="tests\Vaquinha.Automated.UI.Tests\bin\Release\netcoreapp3.1\" />
+    <Folder Include="tests\Vaquinha.Integration.Tests\bin\Release\netcoreapp3.1\" />
+    <Folder Include="tests\Vaquinha.Tests.Common\bin\Release\netcoreapp3.1\" />
+    <Folder Include="tests\Vaquinha.Unit.Tests\bin\Release\netcoreapp3.1\" />
+  </ItemGroup>
+
+</Project>
