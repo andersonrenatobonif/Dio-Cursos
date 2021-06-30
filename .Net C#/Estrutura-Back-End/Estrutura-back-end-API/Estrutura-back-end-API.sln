@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estrutura-back-end-API", "Estrutura-back-end-API.csproj", "{51D7A2CD-C4AE-4D46-866E-3394E3281F9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estrutura-back-end-API", "Estrutura-back-end-API.csproj", "{51D7A2CD-C4AE-4D46-866E-3394E3281F9E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Teste", "Teste", "{948619F1-4B0A-4F21-8BDA-4985926A4288}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "curso.api.tests", "..\Tests\curso.api.tests\curso.api.tests.csproj", "{50C613ED-A8DC-46D6-A293-ACFAA0D2D85A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{62F12EA2-338E-4184-88B1-F26B249994DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +21,17 @@ Global
 		{51D7A2CD-C4AE-4D46-866E-3394E3281F9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51D7A2CD-C4AE-4D46-866E-3394E3281F9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51D7A2CD-C4AE-4D46-866E-3394E3281F9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50C613ED-A8DC-46D6-A293-ACFAA0D2D85A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50C613ED-A8DC-46D6-A293-ACFAA0D2D85A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50C613ED-A8DC-46D6-A293-ACFAA0D2D85A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50C613ED-A8DC-46D6-A293-ACFAA0D2D85A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{51D7A2CD-C4AE-4D46-866E-3394E3281F9E} = {62F12EA2-338E-4184-88B1-F26B249994DC}
+		{50C613ED-A8DC-46D6-A293-ACFAA0D2D85A} = {948619F1-4B0A-4F21-8BDA-4985926A4288}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {97AF3AAF-727A-46D6-9C40-0F6962BABFDC}
