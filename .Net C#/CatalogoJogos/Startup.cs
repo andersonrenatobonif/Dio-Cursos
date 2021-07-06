@@ -29,6 +29,7 @@ namespace CatalogoJogos
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IJogoService, JogoService>();
+            services.AddDbContext<Context>();
             services.AddScoped<IJogoRepository, JogoSqlServerRepository>();
 
 
